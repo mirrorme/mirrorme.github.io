@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mirror Me - Ajax</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<style>
+		h1{margin:32px 0;}
+		code:empty{display:none;}
+		pre{margin-top:12px;font-size:8px;}
+		.test{margin:32px 0;padding:12px 0;border-top:1px dotted #ccc;}
+		.data:before{content:'[data: ';}
+		.data:after{content:']';}
+		.respUrl:before{content:'-> ';}
+		.respStatus:before{content:'-> ';}
+	</style>
+</head>
+<body class="container">
+	<h1>Ajax</h1>
+	<div class="test">
+		<button>test</button>
+		<code class="reqType">GET</code>
+		<code class="reqUrl">ajax.txt</code>
+		<code class="respUrl"></code>
+		<code class="respStatus"></code>
+		<pre class="respData">awaiting send...</pre>
+	</div>
+	<div class="test">
+		<button>test</button>
+		<code class="reqType">GET</code>
+		<code class="reqUrl">https://httpbin.org/get</code>
+		<code class="respUrl"></code>
+		<code class="respStatus"></code>
+		<pre class="respData">awaiting send...</pre>
+	</div>
+	<div class="test">
+		<button>test</button>
+		<code class="reqType">POST</code>
+		<code class="reqUrl">https://httpbin.org/post</code>
+		<code class="reqData">testing</code>
+		<code class="respUrl"></code>
+		<code class="respStatus"></code>
+		<pre class="respData">awaiting send...</pre>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="ajax.js"></script>
+</body>
+</html>

@@ -3,10 +3,20 @@
 <head>
 	<meta charset="utf-8">
 	<title>Mirror Me</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 </head>
-<body>
-	<section>
-		<h1>Anchors</h1>
+<body class="container">
+	<h1>Mirror Me</h1>
+	<div class="text-center">
+		<ul class="list-inline">
+			<li><a href="index.html">index.html</a></li>
+			<li><a href="ajax.html">ajax.html</a></li>
+			<li><a href="embed_video.html">embed_video.html</a></li>
+		</ul>
+		<hr>
+	</div>
+	<div class="col-md-6">
+		<h2>Anchors</h2>
 		<ul>
 			<li><a href="sibling0.html">sibling0.html</a></li>
 			<li><a href="sibling0.html#fragment">sibling0.html#fragment</a></li>
@@ -25,18 +35,22 @@
 			<li><a href="subdir">subdir</a></li>
 			<li><a href="subdir/">subdir/</a></li>
 			<li><a href="subdir/index.html">subdir/index.html</a></li>
+			<li><a href="https://github.com/">https://github.com</a></li>
 		</ul>
-	</section>
-	<section>
-		<h1>Images</h1>
-		<ul>
-			<li><img src="0.png">0.png</li>
-			<li><img src="./1.png">1.png</li>
-			<li><img src="/2.png">2.png</li>
-			<li><img src="//mirrorme.github.io/3.png">//mirrorme.github.io/3.png</li>
-			<li><img src="http://mirrorme.github.io/4.png">http://mirrorme.github.io/4.png</li>
-			<li><img src="https://mirrorme.github.io/5.png">https://mirrorme.github.io/5.png</li>
-		</ul>
-	</section>
+	</div>
+	<div class="col-md-6">
+		<div>
+			<h2>Images</h2>
+			<ul>
+				<li><img src="0.png">0.png</li>
+				<li><img src="./1.png">1.png</li>
+				<li><img src="/2.png">2.png</li>
+				<li><img src="//mirrorme.github.io/3.png">//mirrorme.github.io/3.png</li>
+				<li><img src="https://mirrorme.github.io/4.png">http://mirrorme.github.io/4.png</li>
+				<li><img src="https://mirrorme.github.io/5.png?qs">https://mirrorme.github.io/5.png?qs</li>
+				<li><img src="https://github.com/favicon.ico">https://github.com/favicon.ico</li>
+			</ul>
+		</div>
+	</div>
 </body>
 </html>
